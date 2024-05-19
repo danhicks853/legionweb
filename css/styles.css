@@ -82,6 +82,11 @@ footer p {
     line-height: 1.5;
 }
 
+.features-list {
+    list-style: disc inside;
+    padding-left: 1rem;
+}
+
 .changelog-list, .issues-list {
     list-style: none;
     padding: 0;
