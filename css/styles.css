@@ -5,8 +5,9 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background: url('images/legion-background.jpg') no-repeat center center fixed;
+    background: url('/images/legion-background.webp') no-repeat center center fixed;
     background-size: cover;
+    background-attachment: fixed; /* Ensures the background image does not scroll */
     color: #ffffff;
 }
 
@@ -29,6 +30,7 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
+    margin: 1rem 0;
 }
 
 nav ul li {
@@ -50,10 +52,68 @@ nav ul li a:hover {
     color: #000000;
 }
 
-h1, h2 {
+h1, h2, h3 {
     color: #00FF00; /* Legion green */
 }
 
 footer p {
     margin: 0;
+}
+
+#server-info {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#server-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+#server-info ul li {
+    margin: 0.5rem 0;
+}
+
+#server-info p, #server-info ul li {
+    line-height: 1.5;
+}
+
+.changelog-list, .issues-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.changelog-list li, .issues-list li {
+    margin: 0.5rem 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.changelog-list h2 {
+    color: #00FF00; /* Legion green */
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.changelog-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.changelog-list li ul li {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 0.5rem 0;
 }
