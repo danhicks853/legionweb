@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <style>
+        #output {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        #output pre {
+            color: #00FF00;
+            white-space: pre-wrap; /* Preserve formatting */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Create Account</h1>
+    </header>
+    <main>
+        <form id="accountForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="output" style="display:none;">
+            <h2>Commands</h2>
+            <pre id="commands"></pre>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Legion Haven</p>
+    </footer>
+    <script>
+        document.getElementById('accountForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            const commands = `
+Have an admin pass the following commands on the server:
+.account create ${username}@${username} ${password}
+.bnetaccount create ${username}@${username} ${password}
+.account set gmlevel ${username}@${username} 6 -1
+Then the admin should associate the bnetaccount ID in the accounts table manually.
+
+Download the client: legionhaven.com/client.zip
+Log in with ${username}@${username} and your password.
+Have fun!
+            `;
+            document.getElementById('commands').textContent = commands;
+            document.getElementById('output').style.display = 'block';
+        });
+    </script>
+</body>
+</html>

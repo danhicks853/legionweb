@@ -1,6 +1,0 @@
-<Files "client.zip">
-    AuthType Basic
-    AuthName "Restricted Area"
-    AuthUserFile /path/to/your/.htpasswd
-    Require valid-user
-</Files>
