@@ -1,0 +1,12 @@
+AtlasLootEnhanced-Cata 4.3.4
+Auctionator-Cata 4.3.4
+Bagnon-Cata 4.3.4
+Bartender4-Cata 4.3.4
+Deadly Boss Mods (DBM)-Cata 4.3.4
+Gatherer-Cata 4.3.4
+OmniCC-Cata 4.3.4
+Postal-Cata 4.3.4
+Quartz-Cata 4.3.4
+Questhelper-Cata 4.3.4
+Recount-Cata 4.3.4
+WeakAuras-Cata 4.3.4

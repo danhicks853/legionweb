@@ -1,0 +1,16 @@
+AtlasLoot
+Auctioneer
+Bagnon
+cart
+DBM
+Gatherer
+GearScore
+OmenThreatMeter
+OmniCC
+pfQuest-full-tbc
+pfUI-master
+Quartz
+Questie
+Recount
+SellJunk
+VendorValues

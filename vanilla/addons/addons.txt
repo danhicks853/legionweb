@@ -1,0 +1,11 @@
+Atlas-master
+Bagnon
+Bartender2
+Carnical_EnemyCastBar
+DPSMate-masterEquipCompare_v2.9.8
+Gatherer
+MoveAnything
+pfQuest-full
+pfUI-master
+Postal-master
+ShaguTweaks-master
